@@ -1,0 +1,6 @@
+alexattt\handlers\CancelandStopIntentHandler.class
+alexattt\handlers\LaunchRequestHandler.class
+alexattt\handlers\SessionEndedRequestHandler.class
+alexattt\TTTStreamHandler.class
+alexattt\handlers\DrawSignHandler.class
+alexattt\handlers\HelpIntentHandler.class

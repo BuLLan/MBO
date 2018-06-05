@@ -1,0 +1,33 @@
+{
+  "intents": [
+      {
+        "intent": "AMAZON.CancelIntent"
+      },
+      {
+        "intent": "AMAZON.CancelIntent"
+      },
+      {
+        "intent": "AMAZON.StopIntent"
+      },
+      {
+        "intent": "drawSign",
+        "slots": [
+            {
+              "name": "sign",
+              "type": "LIST_OF_SIGNS"
+            },
+            {
+              "name": "reihe",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "spalte",
+              "type": "LIST_OF_SPALTEN"
+            }
+          ]
+      },
+      {
+        "intent": "restartGame"
+      }
+  ]
+}
