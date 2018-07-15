@@ -2,10 +2,32 @@ drawSign In Reihe {reihe} Spalte {spalte} ein {sign}
 drawSign In Reihe {reihe} Spalte {spalte} ein {sign} zeichnen
 drawSign In Spalte {spalte} Reihe {reihe} ein {sign}
 drawSign In Spalte {spalte} Reihe {reihe} ein {sign} zeichnen
+drawSign {level} {direction} ein {sign}
+drawSign {level} {direction} ein {sign} zeichnen
+drawSign {direction} {level} ein {sign}
+drawSign {direction} {level} ein {sign} zeichnen
 drawSign zeichne in Spalte {spalte} Reihe {reihe} ein {sign}
+drawSign zeichne in Reihe {reihe} Spalte {spalte} ein {sign}
+drawSign zeichne {level} {direction} ein {sign}
+drawSign zeichne {direction} {level} ein {sign}
+drawSign zeichne ein {sign} in Reihe {reihe} Spalte {spalte}
+drawSign zeichne ein {sign} in Spalte {spalte} Reihe {reihe}
+drawSign Setze ein {sign} in Reihe {reihe} Spalte {spalte}
+drawSign Setze ein {sign} in Spalte {spalte} Reihe {reihe}
+drawSign Setze ein {sign} {level} {direction}
+drawSign Setze ein {sign} {direction} {level}
+drawSign Setze ein {sign} ins Zentrum
 drawSign {sign} in Spalte {spalte} Reihe {reihe}
 drawSign {sign} in Reihe {reihe} Spalte {spalte}
-drawSign zeichne ein {sign} in Reihe {reihe} Spalte {spalte}
+drawSign {sign} {level} {direction}
+drawSign {sign} {direction} {level}
+drawSign {sign} ins Zentrum
+drawSign {sign} in die Mitte
+drawSign
+drawSign
+drawSign
+drawSign
+
 
 restartGame Beginne ein neues Spiel
 restartGame Spiel von vorne beginnen

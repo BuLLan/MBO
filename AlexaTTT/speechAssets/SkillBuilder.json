@@ -9,7 +9,12 @@
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "Hilfe",
+            "Ich benötige Hilfe",
+            "Ich benötige Unterstützung",
+            "Hä"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
@@ -49,7 +54,7 @@
             "Beginne ein neues Spiel",
             "Spiel von vorne beginnen",
             "Spiel neu starten",
-            "neustart",
+            "Neustart",
             "Starte das Spiel neu"
           ]
         }
@@ -66,6 +71,21 @@
             {
               "name": {
                 "value": "Kreuz"
+              }
+            },
+            {
+              "name": {
+                "value": "Icks"
+              }
+            },
+            {
+              "name": {
+                "value": "Ring"
+              }
+            },
+            {
+              "name": {
+                "value": "Oh"
               }
             }
           ]
@@ -86,6 +106,46 @@
             {
               "name": {
                 "value": "A"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_LEVELS",
+          "values": [
+            {
+              "name": {
+                "value": "Oben"
+              }
+            },
+            {
+              "name": {
+                "value": "Unten"
+              }
+            },
+            {
+              "name": {
+                "value": "Mitte"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_DIRECTIONS",
+          "values": [
+            {
+              "name": {
+                "value": "Links"
+              }
+            },
+            {
+              "name": {
+                "value": "Rechts"
+              }
+            },
+            {
+              "name": {
+                "value": "Mitte"
               }
             }
           ]
