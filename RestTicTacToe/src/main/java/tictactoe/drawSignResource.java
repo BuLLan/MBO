@@ -12,7 +12,7 @@ public class drawSignResource {
 
     @GET
     public drawSign getSign(){
-       return new drawSign("Kreuz", "1", "A", "Oben", "Links");
+       return new drawSign("Kreuz", "1", "A", "Oben", "Links", "Zentrum");
     }
 
     @POST
@@ -23,6 +23,7 @@ public class drawSignResource {
         String spalte = ds.getSpalte();
         String level = ds.getLevel();
         String direction = ds.getDirection();
+        String centre = ds.getCentre();
 
         int box=9;
 
@@ -45,6 +46,9 @@ public class drawSignResource {
             if(zeile.equals("2") || level.equals("Mitte")){
                 box = 3;
             }
+        }
+        if (centre.equals("Zentrum")){
+            box = 4;
         }
         if (spalte.equals("B") || direction.equals("Mitte")){
             if(zeile.equals("2") || level.equals("Mitte")){

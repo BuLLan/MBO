@@ -9,15 +9,18 @@ public class drawSign {
     private String spalte;
     private String level;
     private String direction;
+    private String centre;
 
 
 
-    public drawSign(@JsonProperty("sign") String sign, @JsonProperty("zeile") String zeile, @JsonProperty("spalte") String spalte, @JsonProperty("level") String level, @JsonProperty("direction") String direction){
+
+    public drawSign(@JsonProperty("sign") String sign, @JsonProperty("zeile") String zeile, @JsonProperty("spalte") String spalte, @JsonProperty("level") String level, @JsonProperty("direction") String direction, @JsonProperty("centre") String centre){
         this.sign = sign;
         this.zeile = zeile;
         this.spalte = spalte;
         this.level = level;
         this.direction = direction;
+        this.centre = centre;
     }
 
     public String getSign(){ return sign; }
@@ -39,5 +42,11 @@ public class drawSign {
     }
     public void setDirection(String direction) {
         this.direction = direction;
+    }
+    public String getCentre() {
+        return centre;
+    }
+    public void setCentre(String centre) {
+        this.centre = centre;
     }
 }
