@@ -70,13 +70,13 @@ public class drawSignResource {
             }
         }
         if(GUI.state[box] == 0) {
-            if (GUI.player == 1 && zeichen.equals("Kreuz") || zeichen.equals("Icks")) {
+            if (GUI.player == 1 && (zeichen.equals("Kreuz") || zeichen.equals("Icks"))) {
                 GUI.state[box] = 1;
                 Game.check(GUI.player);
                 GUI.player = 2;
             }
 
-            if (GUI.player == 2 && zeichen.equals("Kreis") || zeichen.equals("Ring") || zeichen.equals("Oh")) {
+            if (GUI.player == 2 && (zeichen.equals("Kreis") || zeichen.equals("Ring") || zeichen.equals("Oh"))) {
                 GUI.state[box] = 2;
                 Game.check(GUI.player);
                 GUI.player = 1;
