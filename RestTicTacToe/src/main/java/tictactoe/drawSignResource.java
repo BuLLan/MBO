@@ -12,7 +12,7 @@ public class drawSignResource {
 
     @GET
     public drawSign getSign(){
-       return new drawSign("Kreuz", "1", "A");
+       return new drawSign("Kreuz", "1", "A", "Oben", "Links");
     }
 
     @POST
@@ -21,51 +21,53 @@ public class drawSignResource {
         String zeichen = ds.getSign();
         String zeile = ds.getZeile();
         String spalte = ds.getSpalte();
+        String level = ds.getLevel();
+        String direction = ds.getDirection();
 
         int box=9;
 
-        if (spalte.equals("A") || spalte.equals("Links")){
-            if(zeile.equals("1") || spalte.equals("Oben")){
+        if (spalte.equals("A") || direction.equals("Links")){
+            if(zeile.equals("1") || level.equals("Oben")){
                 box = 0;
             }
         }
-        if (spalte.equals("B") || spalte.equals("Mitte")){
-            if(zeile.equals("1") || spalte.equals("Oben")){
+        if (spalte.equals("B") || direction.equals("Mitte")){
+            if(zeile.equals("1") || level.equals("Oben")){
                 box = 1;
             }
         }
-        if (spalte.equals("C") || spalte.equals("Rechts")){
-            if(zeile.equals("1") || spalte.equals("Oben")){
+        if (spalte.equals("C") || direction.equals("Rechts")){
+            if(zeile.equals("1") || level.equals("Oben")){
                 box = 2;
             }
         }
-        if (spalte.equals("A") || spalte.equals("Links")){
-            if(zeile.equals("2") || spalte.equals("Mitte")){
+        if (spalte.equals("A") || direction.equals("Links")){
+            if(zeile.equals("2") || level.equals("Mitte")){
                 box = 3;
             }
         }
-        if (spalte.equals("B") || spalte.equals("Mitte")){
-            if(zeile.equals("2") || spalte.equals("Mitte")){
+        if (spalte.equals("B") || direction.equals("Mitte")){
+            if(zeile.equals("2") || level.equals("Mitte")){
                 box = 4;
             }
         }
-        if (spalte.equals("C") || spalte.equals("Rechts")){
-            if(zeile.equals("2") || spalte.equals("Mitte")){
+        if (spalte.equals("C") || direction.equals("Rechts")){
+            if(zeile.equals("2") || level.equals("Mitte")){
                 box = 5;
             }
         }
-        if (spalte.equals("A") || spalte.equals("Links")){
-            if(zeile.equals("3") || spalte.equals("Unten")){
+        if (spalte.equals("A") || direction.equals("Links")){
+            if(zeile.equals("3") || level.equals("Unten")){
                 box = 7;
             }
         }
-        if (spalte.equals("B") || spalte.equals("Mitte")){
-            if(zeile.equals("3") || spalte.equals("Unten")){
+        if (spalte.equals("B") || direction.equals("Mitte")){
+            if(zeile.equals("3") || level.equals("Unten")){
                 box = 7;
             }
         }
-        if (spalte.equals("C") || spalte.equals("Rechts")){
-            if(zeile.equals("3") || spalte.equals("Unten")){
+        if (spalte.equals("C") || direction.equals("Rechts")){
+            if(zeile.equals("3") || level.equals("Unten")){
                 box = 8;
             }
         }
