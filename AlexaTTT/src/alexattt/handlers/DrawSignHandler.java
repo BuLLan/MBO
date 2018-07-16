@@ -59,7 +59,7 @@ public class DrawSignHandler implements RequestHandler  {
             try {
                 CloseableHttpClient client = HttpClients.createDefault();
                 //TODO: URL anpassen
-                HttpPost httpPost = new HttpPost("http://ptsv2.com/t/c8idn-1528175354/post");
+                HttpPost httpPost = new HttpPost("https://aad16031.ngrok.io");
 
                 String json = "{\"sign\":\""+curPlayer.getValue()+"\",\"reihe\":\""+curReihe.getValue()+"\",\"spalte\":\""+curSpalte.getValue()+"\"}";
                 StringEntity entity = new StringEntity(json);

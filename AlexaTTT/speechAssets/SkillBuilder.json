@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "testen",
+      "invocationName": "Lass uns ein Spiel spielen",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -53,10 +53,26 @@
             "In Reihe {reihe} Spalte {spalte} ein {sign} zeichnen",
             "In Spalte {spalte} Reihe {reihe} ein {sign}",
             "In Spalte {spalte} Reihe {reihe} ein {sign} zeichnen",
+            "{level} {direction} ein {sign}",
+            "{level} {direction} ein {sign} zeichnen",
+            "{direction} {level} ein {sign}",
+            "{direction} {level} ein {sign} zeichnen",
             "zeichne in Spalte {spalte} Reihe {reihe} ein {sign}",
+            "zeichne in Reihe {reihe} Spalte {spalte} ein {sign}",
+            "zeichne {level} {direction} ein {sign}",
+            "zeichne {direction} {level} ein {sign}",
+            "zeichne ein {sign} in Reihe {reihe} Spalte {spalte}",
+            "zeichne ein {sign} in Spalte {spalte} Reihe {reihe}",
+            "Setze ein {sign} in Reihe {reihe} Spalte {spalte}",
+            "Setze ein {sign} in Spalte {spalte} Reihe {reihe}",
+            "Setze ein {sign} {level} {direction}",
+            "Setze ein {sign} {direction} {level}",
+            "Setze ein {sign} ins Zentrum",
             "{sign} in Spalte {spalte} Reihe {reihe}",
             "{sign} in Reihe {reihe} Spalte {spalte}",
-            "zeichne ein {sign} in Reihe {reihe} Spalte {spalte}"
+            "{sign} {level} {direction}",
+            "{sign} {direction} {level}",
+            "{sign} ins {centre}"
           ]
         },
         {
@@ -163,14 +179,14 @@
           ]
         },
         {
-            "name": "CENTRE",
-            "values": [
-              {
-                "name": {
-                  "value": "Zentrum"
-                }
+          "name": "CENTRE",
+          "values": [
+            {
+              "name": {
+                "value": "Zentrum"
               }
-            ]
+            }
+          ]
         }
       ]
     }
