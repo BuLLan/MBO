@@ -2,8 +2,10 @@ package tictactoe;
 
 import tictactoe.Template;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class GUI {
 	private JPanel mousepanel;
@@ -27,10 +29,12 @@ public class GUI {
 	JButton btnReset;
 	JButton btnHelp;
 	JButton btnHelpC;
-	
+    JButton btnWarning;
+
 	
 	static JButton btn[] = new JButton[9];
-	
+
+	static int wrongPlayer = 0;
 	static int state[] = new int[9];
 	static int player = 1;
 	static int winner = 0;
@@ -46,6 +50,7 @@ public class GUI {
 		jf.setTitle("Tic Tac Toe");
 
         for(int i = 0; i<btn.length; i++) {
+            final int temp = i;
             btn[i] = new JButton();
             btn[i].setVisible(true);
             btn[i].addActionListener(new ActionHandler());
@@ -66,6 +71,7 @@ public class GUI {
                 }
             });
             btn[i].addMouseListener(new MouseListener() {
+
                 public void mouseEntered(MouseEvent e ) {
 
                 }
@@ -78,7 +84,7 @@ public class GUI {
                 public void mousePressed(MouseEvent e ) {
 
                 }
-                public void mouseReleased(MouseEvent e) {
+                public void mouseReleased(MouseEvent e)  {
                     if(SwingUtilities.isRightMouseButton(e)) {
                        // System.out.println(xList);
                        // System.out.println(yList);
@@ -94,15 +100,35 @@ public class GUI {
                         distanceH = dtw(H, created);
                         minDist = Math.min(Math.min(Math.min(distanceO, distanceX), distanceR), distanceH);
                         if (minDist == distanceO) {
+                            if(state[temp] == 0 && player == 2){
+                                state[temp] = 2;
+                                Game.check(player);
+                                player = 1;
+                            }else{
+                                wrongPlayer = 1;
+                                btnWarning.setVisible(true);
+                                System.out.println(wrongPlayer);
+                            }
                             System.out.println("O");
                         }
                         else if (minDist == distanceX) {
+                            if(state[temp] == 0 && player == 1){
+                                state[temp] = 1;
+                                Game.check(player);
+                                player = 2;
+                            }else{
+                                wrongPlayer = 1;
+                                btnWarning.setVisible(true);
+                            }
                             System.out.println("X");
                         }
                         else if (minDist == distanceR) {
+                            Game.reset();
                             System.out.println("RESTART");
                         }
                         else if (minDist == distanceH){
+                            help = 1;
+                            btnHelpC.setVisible(true);
                             System.out.println("HELP");
                         }
                         //TODO: Alert werfen
@@ -150,7 +176,25 @@ public class GUI {
 				
 		});
 		jf.add(btnHelp);
-		
+
+
+        btnWarning = new JButton();
+        btnWarning.setBounds(665, 200, 50, 50);
+        btnWarning.setVisible(false);
+        btnWarning.setFocusPainted(false);
+        btnWarning.setContentAreaFilled(false);
+        btnWarning.setBorder(null);
+        btnWarning.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                wrongPlayer = 0;
+                System.out.println(wrongPlayer);
+                btnWarning.setVisible(false);
+            }
+        });
+
+        jf.add(btnWarning);
+
 		btnHelpC = new JButton();
 		btnHelpC.setBounds(650, 100, 50, 50);
 		btnHelpC.setVisible(false);

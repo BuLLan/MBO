@@ -7,7 +7,7 @@ public class ActionHandler implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("test");
+		//System.out.println("test");
 		for(int i = 0; i < GUI.btn.length; i++) {
 			if(GUI.winner == 0) {
 				if (e.getSource() == GUI.btn[i]) {

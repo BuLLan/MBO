@@ -28,7 +28,6 @@ public class drawSign {
 
     public String getZeile(){ return zeile; }
     public void setZeile(String zeile){ this.zeile = zeile; }
-
     public String getSpalte(){ return spalte; }
     public void setSpalte(String spalte){ this.spalte = spalte; }
     public String getLevel() {

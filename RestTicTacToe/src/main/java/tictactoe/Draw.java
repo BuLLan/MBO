@@ -103,6 +103,7 @@ public class Draw extends JLabel {
 		}
 		
 		//Hilfsfeld
+		//TODO: Sprachbefehle, Gestenerkennung
 		if(GUI.help == 1) {
 			g.setColor(Color.WHITE);
 			g.fillRect(100, 100, 600, 400);
@@ -120,6 +121,16 @@ public class Draw extends JLabel {
 			g.drawString("Neustart: Für das Starten eines neuen Spiels", 140, 310);
 			g.setFont(new Font(null, Font.PLAIN, 20)); 
 			g.drawString("[x]", 665, 130);
+		}
+
+		if(GUI.wrongPlayer == 1) {
+			g.setColor(Color.WHITE);
+			g.fillRect(100, 200, 600, 200);
+			g.setColor(Color.BLACK);
+			g.drawRect(100, 200, 600, 200);
+			g.setFont(new Font(null, Font.PLAIN, 20));
+			g.drawString("Spieler " + GUI.player + " ist an der Reihe!" , 280, 300);
+			g.drawString("[x]", 665, 220);
 		}
 		
 		repaint();
