@@ -7,11 +7,17 @@ public class drawSign {
     private String sign;
     private String zeile;
     private String spalte;
+    private String level;
+    private String direction;
 
-    public drawSign(@JsonProperty("sign") String sign, @JsonProperty("zeile") String zeile, @JsonProperty("spalte") String spalte){
+
+
+    public drawSign(@JsonProperty("sign") String sign, @JsonProperty("zeile") String zeile, @JsonProperty("spalte") String spalte, @JsonProperty("level") String level, @JsonProperty("direction") String direction){
         this.sign = sign;
         this.zeile = zeile;
         this.spalte = spalte;
+        this.level = level;
+        this.direction = direction;
     }
 
     public String getSign(){ return sign; }
@@ -22,4 +28,16 @@ public class drawSign {
 
     public String getSpalte(){ return spalte; }
     public void setSpalte(String spalte){ this.spalte = spalte; }
+    public String getLevel() {
+        return level;
+    }
+    public void setLevel(String level) {
+        this.level = level;
+    }
+    public String getDirection() {
+        return direction;
+    }
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
 }
