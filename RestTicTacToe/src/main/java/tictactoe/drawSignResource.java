@@ -24,48 +24,48 @@ public class drawSignResource {
 
         int box=9;
 
-        if (spalte.equals("A")){
-            if(zeile.equals("1")){
+        if (spalte.equals("A") || spalte.equals("Links")){
+            if(zeile.equals("1") || spalte.equals("Oben")){
                 box = 0;
             }
         }
-        if (spalte.equals("B")){
-            if(zeile.equals("1")){
+        if (spalte.equals("B") || spalte.equals("Mitte")){
+            if(zeile.equals("1") || spalte.equals("Oben")){
                 box = 1;
             }
         }
-        if (spalte.equals("C")){
-            if(zeile.equals("1")){
+        if (spalte.equals("C") || spalte.equals("Rechts")){
+            if(zeile.equals("1") || spalte.equals("Oben")){
                 box = 2;
             }
         }
-        if (spalte.equals("A")){
-            if(zeile.equals("2")){
+        if (spalte.equals("A") || spalte.equals("Links")){
+            if(zeile.equals("2") || spalte.equals("Mitte")){
                 box = 3;
             }
         }
-        if (spalte.equals("B")){
-            if(zeile.equals("2")){
+        if (spalte.equals("B") || spalte.equals("Mitte")){
+            if(zeile.equals("2") || spalte.equals("Mitte")){
                 box = 4;
             }
         }
-        if (spalte.equals("C")){
-            if(zeile.equals("2")){
+        if (spalte.equals("C") || spalte.equals("Rechts")){
+            if(zeile.equals("2") || spalte.equals("Mitte")){
                 box = 5;
             }
         }
-        if (spalte.equals("A")){
-            if(zeile.equals("3")){
+        if (spalte.equals("A") || spalte.equals("Links")){
+            if(zeile.equals("3") || spalte.equals("Unten")){
                 box = 7;
             }
         }
-        if (spalte.equals("B")){
-            if(zeile.equals("3")){
+        if (spalte.equals("B") || spalte.equals("Mitte")){
+            if(zeile.equals("3") || spalte.equals("Unten")){
                 box = 7;
             }
         }
-        if (spalte.equals("C")){
-            if(zeile.equals("3")){
+        if (spalte.equals("C") || spalte.equals("Rechts")){
+            if(zeile.equals("3") || spalte.equals("Unten")){
                 box = 8;
             }
         }

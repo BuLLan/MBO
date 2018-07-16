@@ -34,6 +34,14 @@
             {
               "name": "spalte",
               "type": "LIST_OF_SPALTEN"
+            },
+            {
+              "name": "level",
+              "type": "LIST_OF_LEVELS"
+            },
+            {
+              "name": "direction",
+              "type": "LIST_OF_DIRECTIONS"
             }
           ],
           "samples": [
