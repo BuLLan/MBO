@@ -58,6 +58,7 @@ public class DrawSignHandler implements RequestHandler  {
         if (curPlayer != null && curReihe != null && curSpalte != null) {
             try {
                 CloseableHttpClient client = HttpClients.createDefault();
+                //TODO: URL anpassen
                 HttpPost httpPost = new HttpPost("http://ptsv2.com/t/c8idn-1528175354/post");
 
                 String json = "{\"sign\":\""+curPlayer.getValue()+"\",\"reihe\":\""+curReihe.getValue()+"\",\"spalte\":\""+curSpalte.getValue()+"\"}";
