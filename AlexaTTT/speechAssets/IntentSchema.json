@@ -34,7 +34,7 @@
             },
             {
               "name": "centre",
-              "type": "LIST_OF_DIRECTIONS"
+              "type": "CENTRE"
             }
         ]
       },

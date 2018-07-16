@@ -21,13 +21,7 @@ drawSign {sign} in Spalte {spalte} Reihe {reihe}
 drawSign {sign} in Reihe {reihe} Spalte {spalte}
 drawSign {sign} {level} {direction}
 drawSign {sign} {direction} {level}
-drawSign {sign} ins Zentrum
-drawSign {sign} in die Mitte
-drawSign
-drawSign
-drawSign
-drawSign
-
+drawSign {sign} ins {centre}
 
 restartGame Beginne ein neues Spiel
 restartGame Spiel von vorne beginnen

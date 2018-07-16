@@ -42,6 +42,10 @@
             {
               "name": "direction",
               "type": "LIST_OF_DIRECTIONS"
+            },
+            {
+              "name": "centre",
+              "type": "CENTRE"
             }
           ],
           "samples": [
@@ -157,6 +161,16 @@
               }
             }
           ]
+        },
+        {
+            "name": "CENTRE",
+            "values": [
+              {
+                "name": {
+                  "value": "Zentrum"
+                }
+              }
+            ]
         }
       ]
     }
